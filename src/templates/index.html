@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./app.webmanifest" />
+    <meta name="theme-color" content="#a3080c" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="Free restaurant catalogue for you" />
+    <link rel="icon" type="image/x-icon" href="./logo.png" />
+
+    <title>Restaurant Apps</title>
+  </head>
+  <body>
+    <header class="app-bar">
+      <a href="#mainContent" class="skip-link">Menuju ke konten</a>
+      <div class="app-bar-brand">
+        <a href="#/home">
+          <picture>
+            <source type="image/webp" srcset="./logo.webp" />
+            <source type="image/png" srcset="./logo.png" />
+            <img
+              class="logo"
+              src="./logo.png"
+              alt="Logo"
+              aria-label="Logo Website"
+              style="max-width: 100px; height: auto;"
+              crossorigin="anonymous"
+            />
+          </picture>
+        </a>
+      </div>
+      <div class="app-bar-menu">
+        <button id="hamburgerButton">☰</button>
+      </div>
+      <nav id="navigationDrawer" class="app-bar-navigation">
+        <ul>
+          <li><a href="#/home">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
+          <li>
+            <a
+              href="https://github.com/yonand21"
+              aria-label="Lihat profil pengembang"
+              tabindex="0"
+              >About Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main tabindex="0" id="mainContent"></main>
+
+    <footer>
+      <div class="footer-content">
+        <button
+          tabindex="0"
+          id="subscribePushNotification"
+          aria-label="subscribe Push Notification"
+          class="btn"
+        >
+          Subscribe Push Notification
+        </button>
+        <button
+          tabindex="0"
+          id="unsubscribePushNotification"
+          aria-label="unsubscribe Push Notification"
+          class="btn"
+        >
+          Unsubscribe Push Notification
+        </button>
+
+        <h1 tabindex="0">Yonanda Putra | Dicoding Submission</h1>
+        <p tabindex="0">&copy;2023</p>
+      </div>
+    </footer>
+  </body>
+</html>

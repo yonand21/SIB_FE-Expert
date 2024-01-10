@@ -1,0 +1,80 @@
+.app-bar {
+    padding: 8px 16px;
+    background-color: #a3080c;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .app-bar .app-bar-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-bar .app-bar-menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    min-width: 55px;
+    min-height: 55px;
+    font-size: 54px;
+    color: #fafafa;
+    margin-left: 80%;
+  }
+  
+  .app-bar .app-bar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-bar .app-bar-brand .logo {
+    
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+  .app-bar .app-bar-navigation {
+    position: absolute;
+    top: 50px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    padding: 8px;
+    background-color: #a3080c;
+    overflow: hidden;
+  }
+  
+  #navigationDrawer .app-bar-navigation {
+    background-color: #a3080c;
+  }
+  
+  .app-bar .app-bar-navigation.open {
+    left: 0;
+    top: 110px;
+    width: 97.5%;
+    overflow: hidden;
+
+  }
+  
+  .app-bar .app-bar-navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    width: 100%;
+    color: #fafafa;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 20px;
+    transition: all 0.4s ease 0s;
+  }
+  
+  .app-bar .app-bar-navigation ul li a:hover {
+    border-radius: 25px;
+    border: 3px solid #fafafa;
+    padding: 10px;
+  }

@@ -1,0 +1,90 @@
+footer {
+  padding: 16px;
+  background-color: #a3080c;
+}
+
+footer p {
+  text-align: center;
+  color: #fafafa;
+}
+
+footer p a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  padding: 12px 24px;
+  background-color: #fafafa;
+  border: 1px solid #770000;
+  border-radius: 14px;
+ 
+  font-weight: bold;
+  font-size: 16px;
+  color: #a3080c;
+  min-width: 49px;
+  min-height: 49px;
+ 
+  cursor: pointer;
+  transition: .15s ease-in-out;
+}
+ 
+.btn:hover {
+  background-color: #DB0000BB;
+  color: #fafafa;
+}
+.btn:active {
+  background-color: #DB0000DD;
+}
+.btn:focus-visible {
+  outline: 3px solid #DB000055;
+}
+
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h1 {
+  color: #fafafa;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials li a {
+  text-decoration: none;
+  color: #fffafa;
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  width: 54px;
+  height: 54px;
+  text-align: center;
+  padding: 0;
+}
+.socials a i {
+  font-size: 44px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.socials a i:hover {
+  padding: 12px;
+  transition: 0.3s;
+}

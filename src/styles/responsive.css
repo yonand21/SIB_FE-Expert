@@ -1,0 +1,129 @@
+/* Stylingtampilan layar kecil */
+
+@media only screen and (max-width: 400px) {
+  .app-bar .app-bar-menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    min-width: 55px;
+    min-height: 55px;
+    font-size: 34px;
+    color: #fafafa;
+    margin-left: 50%;
+  }
+
+  .app-bar .app-bar-brand .logo {
+    width: 80px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+
+  .app-bar .app-bar-navigation.open {
+    left: 0;
+    top: 90px;
+    width: fit-content;
+    overflow: hidden;
+
+  }
+
+
+}
+
+@media only screen and (max-width: 650px) {
+  .resto-detail .detail .info, .overview {
+    padding: 4px 32px;
+
+  }
+
+  #resto-review .review {
+    padding-left: 32px;
+
+  }
+
+  .app-bar .app-bar-navigation.open {
+    left: 0;
+    top: 90px;
+    width: fit-content;
+    overflow: hidden;
+
+  }
+
+
+}
+
+/* Styling untuk tampilan layar sedang (misalnya tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  
+  .resto-detail .detail .info, .overview {
+    padding: 4px 32px;
+
+  }
+
+  #resto-review .review {
+    padding-left: 32px;
+
+  }
+
+  .resto-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+}
+
+/* Styling untuk tampilan layar besar (misalnya desktop) */
+@media only screen and (min-width: 1025px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+ 
+  .app-bar .app-bar-brand h1 {
+    font-size: 1.5em;
+  }
+ 
+  .app-bar .app-bar-menu {
+    display: none;
+  }
+ 
+  .app-bar .app-bar-navigation {
+    position: static;
+    width: 100%;
+  }
+ 
+  .app-bar .app-bar-navigation ul li {
+    display: inline-block;
+  }
+ 
+  .app-bar .app-bar-navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+ 
+  .resto-list {
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  .resto {
+    grid-template-columns: auto 1fr;
+  }
+ 
+  .resto .resto-name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+ 
+  .resto .resto-description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .resto-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  
+}
